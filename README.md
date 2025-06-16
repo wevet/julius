@@ -221,12 +221,12 @@ Recent documents:
 Other, old documents:
 
 - [The Juliusbook 3 (English) - translated from Japanese for 3.x](http://julius.sourceforge.jp/book/Julius-3.2-book-e.pdf)
-- [The Juliusbook 4 (Japanese) - full documentation in Japanese](http://julius.osdn.jp/juliusbook/ja/)
+- [The Juliusbook 4 (Japanese) - full documentation in Japanese](http://sap.ist.i.kyoto-u.ac.jp/julius/juliusbook/ja/)
 - [The grammar format of Julius](http://julius.sourceforge.jp/en_index.php?q=en_grammar.html)
 
 # References
 
-- [Official web site (Japanese)](http://julius.osdn.jp/)
+- [Web site (Japanese)](http://sap.ist.i.kyoto-u.ac.jp/julius/)
 - [Old development site, having old releases](http://sourceforge.jp/projects/julius/)
 - Publications:
   - A. Lee and T. Kawahara. "Recent Development of Open-Source Speech Recognition Engine Julius" Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC), 2009.
