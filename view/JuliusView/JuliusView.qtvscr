@@ -1,0 +1,429 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" FontFamily="Segoe UI" FontSize="12">
+  <FlowDocument.Tag><![CDATA[{
+  "timestamp": "2025-07-17 14:32:17",
+  "files": {
+    "D:\\GenerativeAI\\Julius_Core\\julius\\view\\JuliusView\\JuliusView.vcxproj": {
+      "before": "7VlZb+M2EN6nPhToD+ibIKSw/WDLiQ2v28hadO3U8NY5sM7xUmBBy7TNriQKJJWju/3vHfHQ4SNZo5sECJKHACKHw+HHmW9m6B9+fvPGfXcbBtY1ZpzQqGfvN5q2hSOfzki06NmJmNe79jvvpx/dM0b/xr6wBniOkkCcI7bAgvfs9wkJZrYFWiL4WgoR/+Y43F/iEPFGSHxGOZ2Lhk9DZ4avcUBjzJyQT9NlzkGz2bJBu2W5I4HDIaNJbI3RFAc9W2/Yp9GcLBKGBBjIlTCIb5q1RpEfJDPcswd4miy+XpGodWBWwJqSKk/KuE55MDUl/XPPAiTmlIWeVOI62beSgAGFx6blDxj3EQcYcfyAeVrqOQxU6N122v8XO1DxKMjdZ9o347aTcdJFncxHlcuCC4Azi7uS2w4DOkVB7qiXfe0plyrGvP23jabrrA1rv/oT391QNlNul650HTOkJbS6YUJm3pdfO91ua9r1650Zfltvt1Gnjtrtab170Gnvz32Em83mv5mzyjVazUdKxQkKMY+Rj70PSUASfknwjeuUZ7Q4hMGM3nAV9iYYsiM10yPdK5KqkXbkiOm4D2PKhKVP1bP3qpd9TS5nSCxrfx1nHNKP44amn0YM2HPbcjbdBMTkjKR00bMre9VShNa+7lWN9bVKr1cpMEXFNtRTWmKCoEwf53cx9n6P44D4kplW4lROa+guOJa7jMmUIUYw9wRLsOusj+sFxsBzSgOOhXe9327lcWRGtXB/iRjyBWYTkLyICFA36C6NbsUeQM+vw9oFthKHPR1wc4is74bc1ZIGGCBYMBSexoKE5B95lfp6tk4/K/AZNz8d6C/HW4Hynw62F+GrkjpGu1F0mZrV4lKKPLoVOErrTaAsAXWmTpauU5AtJofS4gnwHYaCUwmsLYEsU9BiCN0Q3WSJoWi1d6K6UoaQu8oCcR0U4HOW5s4BYatZq5B0GgmImfRVoFx8S7jgVUhYO+up1LLMNaY+CiAtDZBAJo2YLJkm4AI2+ijfG66VzPAK2LdVIJKaXsF6CCzjXS8QLkm1hqhKlJcSwjFKO2kVyoqUoV+GYphEstJV8gU62a3wNVzQD/o0jEmAc0+8QiwCjh6nvbsn/0MtWhpU9RCwy2Qw7i+x/1kXUNlnJnDGMCQHH3NOWW47965GJ62Dw0+Do/cXw8NP/dOTyen46PCX6hb5WtpIbNaUbZWW8NC+o8jHx1ARa5NWR5U4lMsr53bHJPqcYzBJppM7DoB7oIBD1eg6+ZDZ0nKHOMLwTqGq/ZHaP21D9OZbp40V2abA0+u3K82RzyQ5dLtfuwkg+axRyXubFQDgNkt3fP/F/5FEfnpQKZWeAhxGH3rjlIHMHUWCESgFfCNmeqMNE9mizK9UYZp9ZgLbnEO52cmrm2nffkQ3K7Qpz8wtr6xiqOwRr9uwSjEtu6uk+iI55ZVNHnKvlJbz131PeaFMXDqj7dZdCvXDg2lqNrUvWX+p3xFVloON5U5m6+xVFMz4Dw==",
+      "after": "7VntUttGFM3vzvQVOqqGjvFMsQx4CA2yMsEQSmvzEfPxJzPMWl7baiStql0BbtNn66v17qe9tkVwSUgmgR+Adu+u7t49e+65q39/ePbMf3mbxM41zmlE0qa7Xqu7Dk5D0o/SYdMt2GBt230ZfP+df5KTP3DInD08QEXMzlA+xIw23d0iivuuA7Ok8DRiLHvheTQc4QTRWhKFOaFkwGohSbw+vsYxyXDuJbTHh3kb9fqmC7M7jn/IcHKQkyJz2qiH46arXtgi6SAaFjli4CCVxmC+qNc5TMO46OOmu4d7xfD9ZZRubugRMMaaKhA2vmc3clf4j38SIzYgeRKISXzPPEsLaJDxWDT8A869wTFGFH/APWX1ORyU0bvdajw0djDFJ4ncXa7dO25LOud7BqESsAAAgDIbW6A9iEkPxROYXrQUTi7kCQvWn9fqvjfXrFD1Ox7fkLwvQcdH+p5uUhZquoMi6gd//7K1vb3Z2w7Xtvr4+VqjgbbWUKPRW9ve2GqsD0KE6/X6PwaqYoya5g0h7AglmGYoxMFvRRwV9CLCN75n9yhzOAR9ckPloddHwSypzpd0p8nM8k7ZRffqerMO6JhZ3inrUMEoDhysfsTPfNOtrKya9mql2axUnOM3zo/7txFldNXqffsnqzFJTZWqG6ysdrpiOhW2vSgHDiP5uPrWzOh75l+5sfxoT3ZWsVOSkZw5apqmu7J60VIUeILYqPq2Y5iulWU1RZK1DGairuMtQoy9QItHqu9XVnWUxYKn+KziaoK0huijapPc2TjDwassi6NQ8OcMm4hutTfnFIu3tKNejvII04DlBfa9+XY1QDt4RkhMMQuu1xubk9OuW5Vxa4RyFDKcd8HyPI0gwcDcViu3FFidjb21HTO4sGIwFzaLaR8vcANggI8WucsRiTGEYJij5DhjURL9JbZSbU9p92cNvMkgjxf0rwetkJgeL2xfC1YPlyNom5jnB5uUUIWMctWXmpdqPp+i7pIkNDMEctHiJKC07ikDXmQguSFZTE0Oqe1ugrPzwsI088A3zFLop3jHNFt8ivn1GuTBUm+Q2dvhIqjpmu0+Iuw1KVIoaHYxyH+scnzTbRWUkURoiZ1W3CJJFsXY2qwP65Fy1XLKJLS4ZlHE3cGUoiF2JDZRGoKbv0bDkeuc4Vs25fILJyRF3HdSwpyYQJ7HzkQE/cz/F2DfceCPqOASNBbGogSDwTnXRPG4ZiDqyVVPKx9L5O7fMpzyetGANgB1LA6gsCsd2AUVgPvuPa0h6Qkp0B1hqDStWC93MHRI5485iJucC17QhbMSbkqB1QowW3D2sRGgS8/DCUGdzDbsWQwabQ8xpDWV3gpQRPNOG7ByEavdUqi+1zY8JLD6LImyuGLQOu/l0iGxNvhbDO0UDT4hllmM8zEQK9j/mw6sjqIVWn5OO4hf02nSEVdxUMFGqai/pfX/ViU64iZpqgagtkuUp6B52vxaMBC/oYC0GmUuBNPuXrs1wuE7VfWYR2NwkuMsJyEkTZJPfKfB5eHR5sbO1d7+7vnBzlXr+Kh73N7f+Wm1xL7KK9DFM5lXcUkGN4M8JXegjFUuzbYa8w7clkYQeumbVA7TFVx5v5wCymStN3Qs21H6bhLGbtHrjilcnwbgA4Vq0fcmTcaNA5xiuESVRf6hXAG/XlHul3ZrJ8w75UXYJMbTKR+cmOlYSs6WJJfZ9S8HnddFGvKFCoDxVQDk1KIXdpmIHaYsj0DnhNpMX4ks6DCDDDJlPWoejUEZvCRQj56AWopEGdHS7scE6oJU/TCQGpwsC5snZvNLEfEFAUYzmyVCHgYZzUpfOK89MdqjAVRm4rkPVfO12Z3fLpj8fDJRg3M3a1MF6OSmwSrfSm7Fpj7N6Osw6ZylSM31grp8mb8vMJ+0gv8A"
+    }
+  }
+}]]></FlowDocument.Tag>
+  <Section Margin="0,24" TextAlignment="Center">
+    <Paragraph FontSize="24" FontWeight="Bold" Margin="12,0">
+      <LineBreak />
+      <Span Foreground="Gray">Qt Visual Studio Tools</Span>
+    </Paragraph>
+    <Paragraph FontSize="42" Margin="12,0" FontWeight="Bold">
+      <Span TextDecorations="Underline">Project Format Conversion</Span>
+    </Paragraph>
+    <Paragraph Margin="12,8" FontSize="18">
+      <Span>Report generated on 2025-07-17 14:32:17</Span>
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Files</Span>
+    </Paragraph>
+    <Paragraph Margin="24,12,0,0">
+      <Span FontFamily="Consolas" FontSize="14" Background="WhiteSmoke"><![CDATA[D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj]]></Span>
+      <LineBreak />
+      <Hyperlink NavigateUri="file://D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj?before">[Before]</Hyperlink>
+      <Hyperlink NavigateUri="file://D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj?after">[After]</Hyperlink>
+      <Hyperlink NavigateUri="file://D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj?diff&amp;before&amp;after">
+                        [Diff before/after]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj?diff&amp;before&amp;current">
+                        [Diff before/current]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj?diff&amp;after&amp;current">
+                        [Diff after/current]
+                    </Hyperlink>
+      <LineBreak />
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Changes</Span>
+    </Paragraph>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Enabling multi-processor compilation]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Project format version]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Keyword>QtVS_v304</Keyword>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Fallback for QTMSBUILD environment variable]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Default Qt properties]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt build settings]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Warn if Qt/MSBuild is not found]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  </Target>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt property sheet]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt targets]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[D:\GenerativeAI\Julius_Core\julius\view\JuliusView\JuliusView.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+  </Section>
+  <Section>
+    <Paragraph />
+  </Section>
+</FlowDocument>
+<!--HTTMC+iaX/CUnMC6ONKe8D5n7HH1tLvyMDqRZFAAADw=-->
