@@ -21,6 +21,7 @@
 #include <QTextStream>
 #include <QMessageBox>
 #include <QDebug>
+#include <QLabel>
 #include <windows.h>
 
 // sqrt, log10, fabs
@@ -130,7 +131,6 @@ void JuliusAnalyzeWindow::setupUi()
   adxTableView_->setItemDelegate(delegate);
 
   adxTableView_->setEditTriggers(QAbstractItemView::DoubleClicked);
-  // | QAbstractItemView::SelectedClicked | QAbstractItemView::EditKeyPressed
 
   for (int i = 1; i < ADXLipModel::fixedParamCount(); ++i)
   {
@@ -140,9 +140,62 @@ void JuliusAnalyzeWindow::setupUi()
   // テーブルをアクション付きコンテキストメニュー化
   adxTableView_->setContextMenuPolicy(Qt::ActionsContextMenu);
 
+  // 右ペイン上部に AIUEON 調整UI を作成
+  thresholdA_ = new QDoubleSpinBox(this);
+  thresholdI_ = new QDoubleSpinBox(this);
+  thresholdU_ = new QDoubleSpinBox(this);
+  thresholdE_ = new QDoubleSpinBox(this);
+  thresholdO_ = new QDoubleSpinBox(this);
+  thresholdN_ = new QDoubleSpinBox(this);
+
+  btnApplyA_ = new QPushButton(tr("A"), this);
+  btnApplyI_ = new QPushButton(tr("I"), this);
+  btnApplyU_ = new QPushButton(tr("U"), this);
+  btnApplyE_ = new QPushButton(tr("E"), this);
+  btnApplyO_ = new QPushButton(tr("O"), this);
+  btnApplyN_ = new QPushButton(tr("N"), this);
+
+  // ボタン幅をまとめて半分に
+  for (auto* btn : { btnApplyA_, btnApplyI_, btnApplyU_, btnApplyE_, btnApplyO_, btnApplyN_ })
+  {
+    // 初期サイズヒントの半分に固定
+    const int w = btn->sizeHint().width() / 2;
+    btn->setFixedWidth(w);
+  }
+
+  // スピンボックスの共通設定
+  for (auto* sb : { thresholdA_, thresholdI_, thresholdU_, thresholdE_, thresholdO_, thresholdN_ })
+  {
+    sb->setRange(0.0, 1.0);
+    sb->setSingleStep(0.01);
+    sb->setValue(0.0);
+
+  }
+
+  // ラベル＋スピン＋ボタン一式を水平方向に配置
+  auto* thLayout = new QHBoxLayout;
+  auto addRow = [&](QDoubleSpinBox* sb, QPushButton* btn)
+  {
+    thLayout->addWidget(sb);
+    thLayout->addWidget(btn);
+  };
+
+  addRow(thresholdA_, btnApplyA_);
+  addRow(thresholdI_, btnApplyI_);
+  addRow(thresholdU_, btnApplyU_);
+  addRow(thresholdE_, btnApplyE_);
+  addRow(thresholdO_, btnApplyO_);
+  addRow(thresholdN_, btnApplyN_);
+
+  // 右ペイン：閾値UI の下にテーブルを配置
+  auto* rightPane = new QVBoxLayout;
+  rightPane->addLayout(thLayout);
+  rightPane->addWidget(adxTableView_);
+
+
   auto* middleLayout = new QHBoxLayout;
-  middleLayout->addLayout(waveformArea, 2);
-  middleLayout->addWidget(adxTableView_, 3);
+  middleLayout->addLayout(waveformArea, 4);
+  middleLayout->addLayout(rightPane, 6);
 
   playButton_ = new QPushButton(tr("Play"), this);
   pauseButton_ = new QPushButton(tr("Pause"), this);
@@ -213,6 +266,15 @@ void JuliusAnalyzeWindow::setupConnections()
   {
     isApplySilenceCorrection = on;
   });
+
+
+  // 各 AIUEON 毎に接続
+  connect(btnApplyA_, &QPushButton::clicked, this, &JuliusAnalyzeWindow::onApplyThresholdA);
+  connect(btnApplyI_, &QPushButton::clicked, this, &JuliusAnalyzeWindow::onApplyThresholdI);
+  connect(btnApplyU_, &QPushButton::clicked, this, &JuliusAnalyzeWindow::onApplyThresholdU);
+  connect(btnApplyE_, &QPushButton::clicked, this, &JuliusAnalyzeWindow::onApplyThresholdE);
+  connect(btnApplyO_, &QPushButton::clicked, this, &JuliusAnalyzeWindow::onApplyThresholdO);
+  connect(btnApplyN_, &QPushButton::clicked, this, &JuliusAnalyzeWindow::onApplyThresholdN);
 }
 
 
@@ -226,24 +288,8 @@ void JuliusAnalyzeWindow::updateSliderRangeFromWave()
 }
 
 
-void JuliusAnalyzeWindow::onLoadWav()
-{
-  const QString path = QFileDialog::getOpenFileName(this, tr("Select WAV File"), QString(), tr("WAV Files (*.wav)"));
-  if (path.isEmpty()) {
-    return;
-  }
 
-  loadedWavPath_ = path;
-  if (!waveformWidget_->loadFromFile(path)) {
-    QMessageBox::warning(this, tr("Error"), tr("Failed Import Wav"));
-    return;
-  }
-
-  updateSliderRangeFromWave();
-  statusBar()->showMessage(tr("Complete Import: %1").arg(path), 5000);
-}
-
-
+#pragma region ADX
 void JuliusAnalyzeWindow::onExportADXLip()
 {
   const QString outPath = QFileDialog::getSaveFileName(this, tr("Export ADXLip"), QString(), tr("ADXLip Files (*.adxlip)"));
@@ -255,7 +301,6 @@ void JuliusAnalyzeWindow::onExportADXLip()
   }
   statusBar()->showMessage(tr("ADXLip Success: %1").arg(outPath), 5000);
 }
-
 
 void JuliusAnalyzeWindow::onImportADXLip()
 {
@@ -369,7 +414,26 @@ void JuliusAnalyzeWindow::onImportADXLip()
 
   qDebug() << "[ImportADXLip] done";
 }
+#pragma endregion
 
+
+#pragma region Wav
+void JuliusAnalyzeWindow::onLoadWav()
+{
+  const QString path = QFileDialog::getOpenFileName(this, tr("Select WAV File"), QString(), tr("WAV Files (*.wav)"));
+  if (path.isEmpty()) {
+    return;
+  }
+
+  loadedWavPath_ = path;
+  if (!waveformWidget_->loadFromFile(path)) {
+    QMessageBox::warning(this, tr("Error"), tr("Failed Import Wav"));
+    return;
+  }
+
+  updateSliderRangeFromWave();
+  statusBar()->showMessage(tr("Complete Import: %1").arg(path), 5000);
+}
 
 void JuliusAnalyzeWindow::onPlay()
 {
@@ -388,8 +452,79 @@ void JuliusAnalyzeWindow::onStop()
   waveformWidget_->stopPlayback();
   statusBar()->showMessage(tr("Stop"), 2000);
 }
+#pragma endregion
 
 
+#pragma region Threshold
+void JuliusAnalyzeWindow::onApplyThresholdA()
+{
+  auto frames = adxModel_->frames();
+  const double t = thresholdA_->value();
+  for (auto& f : frames)
+    if (f.A < t)
+      f.A = 0.0;
+  adxModel_->setFrames(frames);
+  adxModel_->layoutChanged();
+}
+
+void JuliusAnalyzeWindow::onApplyThresholdI()
+{
+  auto frames = adxModel_->frames();
+  const double t = thresholdI_->value();
+  for (auto& f : frames)
+    if (f.I < t)
+      f.I = 0.0;
+  adxModel_->setFrames(frames);
+  adxModel_->layoutChanged();
+}
+
+void JuliusAnalyzeWindow::onApplyThresholdU()
+{
+  auto frames = adxModel_->frames();
+  const double t = thresholdU_->value();
+  for (auto& f : frames)
+    if (f.U < t)
+      f.U = 0.0;
+  adxModel_->setFrames(frames);
+  adxModel_->layoutChanged();
+}
+
+void JuliusAnalyzeWindow::onApplyThresholdE()
+{
+  auto frames = adxModel_->frames();
+  const double t = thresholdE_->value();
+  for (auto& f : frames)
+    if (f.E < t)
+      f.E = 0.0;
+  adxModel_->setFrames(frames);
+  adxModel_->layoutChanged();
+}
+
+void JuliusAnalyzeWindow::onApplyThresholdO()
+{
+  auto frames = adxModel_->frames();
+  const double t = thresholdO_->value();
+  for (auto& f : frames)
+    if (f.O < t)
+      f.O = 0.0;
+  adxModel_->setFrames(frames);
+  adxModel_->layoutChanged();
+}
+
+void JuliusAnalyzeWindow::onApplyThresholdN()
+{
+  auto frames = adxModel_->frames();
+  const double t = thresholdN_->value();
+  for (auto& f : frames)
+    if (f.N < t)
+      f.N = 0.0;
+  adxModel_->setFrames(frames);
+  adxModel_->layoutChanged();
+}
+#pragma endregion
+
+
+#pragma region Julius
 /// <summary>
 /// juliusの解析を行う
 /// </summary>
@@ -447,6 +582,9 @@ void JuliusAnalyzeWindow::onRunJulius()
   const QString mainJconf = baseDir.filePath("thirdparty/dictation-kit/main.jconf");
   const QString amDnnJconf = baseDir.filePath("thirdparty/dictation-kit/am-dnn.jconf");
   const QString dnnConf = baseDir.filePath("thirdparty/dictation-kit/julius.dnnconf");
+
+  const QString extraJconf = baseDir.filePath("user/extra.jconf");
+  const QString dictFile = baseDir.filePath("user/userdict.dict");
     
   // ファイル存在チェック
   for (auto p : { juliusExe, mainJconf, amDnnJconf, dnnConf }) {
@@ -466,6 +604,7 @@ void JuliusAnalyzeWindow::onRunJulius()
   args << "-C" << mainJconf
     << "-C" << amDnnJconf
     << "-dnnconf" << dnnConf
+    //<< "-nostrip" // 単語分割をしない
     << "-smpFreq" << QString::number(rate)    // ← ここで正しいサンプルレートを指定
     << "-smpPeriod" << QString::number(period)  // ← 必要に応じて
     << "-fshift" << QString::number(shift)   // ← ここでフレームシフト幅を指定
@@ -487,7 +626,6 @@ void JuliusAnalyzeWindow::onRunJulius()
     proc->closeWriteChannel();
   }
 }
-
 
 void JuliusAnalyzeWindow::parseForcedAlignment(const QString& rawLine)
 {
@@ -582,7 +720,6 @@ void JuliusAnalyzeWindow::parseForcedAlignment(const QString& rawLine)
   const QString cvLabel = consRoman + ph;
   pendingVowels_.append({ ph, fromFrame, toFrame, midFrame, consRoman, cvLabel });
 }
-
 
 void JuliusAnalyzeWindow::processForcedAlignmentResult()
 {
@@ -725,5 +862,7 @@ void JuliusAnalyzeWindow::processForcedAlignmentResult()
 
   statusBar()->showMessage(tr("Julius Analyze Success"), 2000);
 }
+#pragma endregion
+
 
 

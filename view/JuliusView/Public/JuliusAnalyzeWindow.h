@@ -9,6 +9,7 @@
 #include <QString>
 #include <QComboBox>
 #include <QCheckBox>
+#include <QDoubleSpinBox>
 
 #include "WaveformWidget.h"
 #include "ADXLipModel.h"
@@ -82,6 +83,28 @@ private:
   void processForcedAlignmentResult();
 
 
+  // threshold
+  // AIUEONごとの閾値＋適用ボタン
+  QDoubleSpinBox* thresholdA_;
+  QDoubleSpinBox* thresholdI_;
+  QDoubleSpinBox* thresholdU_;
+  QDoubleSpinBox* thresholdE_;
+  QDoubleSpinBox* thresholdO_;
+  QDoubleSpinBox* thresholdN_;
+
+  QPushButton* btnApplyA_;
+  QPushButton* btnApplyI_;
+  QPushButton* btnApplyU_;
+  QPushButton* btnApplyE_;
+  QPushButton* btnApplyO_;
+  QPushButton* btnApplyN_;
+
+  void onApplyThresholdA();
+  void onApplyThresholdI();
+  void onApplyThresholdU();
+  void onApplyThresholdE();
+  void onApplyThresholdO();
+  void onApplyThresholdN();
 };
 
 #endif 
